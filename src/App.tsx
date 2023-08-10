@@ -1,12 +1,16 @@
 import React from 'react';
-
 import './App.css';
-import { ProjectListScreen } from 'screens/project-list';
+// import { NewScreen } from 'screens/new-screen';
+import { SortScreen } from 'screens/sort-list';
+// import SortApp from 'screens/gpttests';
 
 function App() {
   return (
     <div className="App">
-        <ProjectListScreen />
+      
+          <SortScreen/>
+      {/* <NewScreen/> */}
+      {/* <SortApp/> */}
     </div>
 );
 }

@@ -1,9 +1,23 @@
 import React from 'react'
+import { User } from './search-panel';
 
-export const List = ({users, list}) => {
+interface Project{
+  id:string;
+  name:string;
+  personId:string;
+  pin:boolean;
+  organization:string;
+}
+
+interface ListProps{
+  list: Project[];
+  users:User[]
+}
+
+export const List = ({users, list}:ListProps) => {
   return (
-      <div align={"center"}>
-        <table style={{border: "1.5px solid rgb(200, 200, 200)"}}>
+      <div>
+        <table style={{border: "1.5px solid rgb(200, 200, 200)" , margin:"0 auto"}}>
           <thead>
           <tr>
             <th>Project name</th>
